@@ -1,7 +1,8 @@
 import { prisma } from "@repo/db";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET( req: NextRequest,
+  { params }: { params: { id: string } }) {
   try {
     const product = await prisma.product.findUnique({ where: { id: Number(params.id) } });
     return NextResponse.json(product, { status: 200 });
