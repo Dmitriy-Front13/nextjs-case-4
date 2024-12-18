@@ -1,7 +1,6 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "@repo/ui/styles.css";
 import "./globals.css";
 import Providers from "../components/providers";
 import { Toaster } from "@repo/ui";
